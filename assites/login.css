@@ -3,72 +3,113 @@
   padding: 0;
   margin: 0;
 }
+
 body {
-  background-image: url(assites/imgs/01.avif);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("assites/imgs/01.avif") no-repeat center center fixed;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
+
 .container {
   width: 100%;
   min-height: 100vh;
-  line-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 section {
-  border: 2px solid #ccc;
-  border-radius: 20px;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  background: rgba(0, 0, 0, 0.7); /* خلفية شفافة للقسم */
+  border-radius: 15px;
+  padding: 30px;
+  width: 350px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 section h1 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
-  color: white;
-  margin-top: 10px;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
 }
+
 .inputbox {
-  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
 }
+
 .inputbox label {
-  position: absolute;
-  left: 61px;
+  display: block; /* وضع الـ label خارج الحقل */
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px; /* مسافة بين الـ label والحقل */
 }
+
 .inputbox input {
-  width: 300px;
-  height: 40px;
-  border-radius: 29px;
+  width: 100%;
+  height: 45px;
   border: none;
-  box-shadow: 2px 2px 2px 1px rgb(70, 12, 124);
+  border-radius: 25px;
+  padding: 0 15px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inputbox input:focus {
+  border: 1px solid #f0c14b;
+  box-shadow: 0 0 8px #f0c14b;
 }
 
 .forget {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 20px;
 }
+
+.forget a {
+  color: #f0c14b;
+  text-decoration: none;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
 section button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  text-align: center;
-  border-radius: 35px;
-  margin: auto;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #470c7c;
+  background-color: #f0c14b;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
 section button:hover {
-  background-color: cornsilk;
-  transition: 1s;
-  transform: scale(1.1);
+  background-color: #e09e3f;
+  transform: scale(1.05);
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.register a {
+  color: #f0c14b;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
 }
