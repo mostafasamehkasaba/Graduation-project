@@ -11,8 +11,10 @@ btn.addEventListener("click", function () {
   localStorage.setItem("userName", userName.value);
   localStorage.setItem("password", password.value);
 
-  window.location.href = "index.html";
-
   userName.value = "";
   password.value = "";
+
+  setTimeout(function () {
+    window.location.href = "index.html";
+  }, 1000);
 });
