@@ -8,10 +8,46 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Home Page</title>
   </head>
   <body>
-    <h1>welcome to my webstie</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <label for="places">Choose a place:</label>
+            <select id="places" name="places">
+              <option value="cairo">Cairo</option>
+              <option value="giza">Giza</option>
+              <option value="fayoum">Fayoum</option>
+              <option value="beni-suef">Beni Suef</option>
+              <option value="minya">Minya</option>
+              <option value="assiut">Assiut</option>
+              <option value="sohag">Sohag</option>
+              <option value="qena">Qena</option>
+              <option value="luxor">Luxor</option>
+              <option value="aswan">Aswan</option>
+              <option value="new-valley">New Valley</option>
+              <option value="matrouh">Matrouh</option>
+              <option value="alexandria">Alexandria</option>
+              <option value="the-lake">The Lake</option>
+              <option value="alsharqia">Alsharqia</option>
+              <option value="south-sinai">South Sinai</option>
+              <option value="red-sea">Red Sea</option>
+            </select>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="change_mode">
+          <i class="fa-solid fa-moon dark" id="dark" class="dark"></i>
+          <i class="fa-solid fa-sun light" id="light" class="light"></i>
+        </div>
+      </nav>
+      <div class="egypt_text">EGYPT</div>
+    </header>
+
     <script src="script.js"></script>
   </body>
 </html>
