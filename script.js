@@ -27,14 +27,16 @@ var sun = document.getElementById("light");
 var moon = document.getElementById("dark");
 var body = document.body;
 
-sun.onclick = function changee() {
+sun.onclick = function () {
   sun.style.display = "none";
-  moon.style.display = "block";
+  moon.style.display = "flex";
   body.style.backgroundColor = "white";
+  body.style.color = "black";
 };
 
-moon.onclick = function restore() {
+moon.onclick = function () {
   body.style.backgroundColor = "#181C14";
+  body.style.color = "white";
   moon.style.display = "none";
-  sun.style.display = "block";
+  sun.style.display = "flex";
 };
