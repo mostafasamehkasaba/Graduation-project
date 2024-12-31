@@ -3,14 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 5000px;
 }
+
 header {
   position: relative;
   margin-top: 5px;
   width: 100%;
-  height: 600px;
+  height: 800px;
   overflow: hidden;
 }
 
@@ -20,7 +22,7 @@ header .background {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(assites/imgs/01.jpg);
+  background-image: url(assites/imgs/header.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,7 +43,7 @@ nav {
   align-items: center;
   padding: 10px 20px;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #76abae;
   z-index: 3;
   position: relative;
 }
@@ -128,19 +130,21 @@ ul li select {
 
 .threePlaces {
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-color: #ccc;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .threePlaces h1 {
   width: 100%;
   height: 10%;
   text-align: center;
   padding-top: 10px;
 }
+
 .content_places {
   width: 80%;
   height: 90%;
@@ -150,31 +154,75 @@ ul li select {
   display: flex;
   align-items: center;
 }
+
 .content_places .space_betwween {
-  width: 80%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
 }
+
 .text_places {
   width: 50%;
   height: 100%;
   padding: 20px;
+  padding-top: 10px;
 }
+
 .img_places {
   width: 50%;
   height: 100%;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.content_places .space_betwween .img_one {
+
+.content_places .space_betwween .img_one,
+.content_places .space_betwween .img_two,
+.content_places .space_betwween .img_three {
   width: 170px;
   height: 300px;
   padding-top: 5px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out; /* Add transition effect */
+}
+
+.content_places .space_betwween .img_one {
   background-image: url(assites/imgs/alex.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10px;
+}
+
+.content_places .space_betwween .img_two {
+  background-image: url(assites/imgs/Aswan2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content_places .space_betwween .img_three {
+  background-image: url(assites/imgs/cairo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content_places .space_betwween .img_one:hover,
+.content_places .space_betwween .img_two:hover,
+.content_places .space_betwween .img_three:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Apply shadow on hover */
+  transform: scale(1.1);
+  transform: translateY(1.2s);
+  transition: 0.5s;
+}
+
+.Aswan_text span,
+.alex_text span,
+.cairo_text span {
+  color: #76abae;
+  font-size: 25px;
 }
