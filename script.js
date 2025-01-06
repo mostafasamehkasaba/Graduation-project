@@ -36,7 +36,7 @@ sun.onclick = function () {
 
 moon.onclick = function () {
   body.style.backgroundColor = "#181C14";
-  body.style.color = "white";
+  body.style.color = "#EFF3EA";
   moon.style.display = "none";
   sun.style.display = "flex";
 };

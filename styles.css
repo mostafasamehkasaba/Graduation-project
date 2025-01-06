@@ -214,9 +214,8 @@ ul li select {
 .content_places .space_betwween .img_one:hover,
 .content_places .space_betwween .img_two:hover,
 .content_places .space_betwween .img_three:hover {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Apply shadow on hover */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   transform: scale(1.1);
-  transform: translateY(1.2s);
   transition: 0.5s;
 }
 
