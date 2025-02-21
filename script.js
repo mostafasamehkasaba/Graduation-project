@@ -40,3 +40,9 @@ moon.onclick = function () {
   moon.style.display = "none";
   sun.style.display = "flex";
 };
+
+document.querySelectorAll(".fa-heart").forEach((heart) => {
+  heart.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
+});
