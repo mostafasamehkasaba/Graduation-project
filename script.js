@@ -46,3 +46,22 @@ document.querySelectorAll(".fa-heart").forEach((heart) => {
     this.classList.toggle("active");
   });
 });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      let carousel = new bootstrap.Carousel(
+        document.getElementById("carouselExampleCaptions"),
+        {
+          interval: 3000,
+          pause: "hover",
+          wrap: true, 
+          touch: true,
+        }
+      );
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "ArrowRight") {
+          carousel.next();
+        } else if (event.key === "ArrowLeft") {
+          carousel.prev();
+        }
+      });
+    });

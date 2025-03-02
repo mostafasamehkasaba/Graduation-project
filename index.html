@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Home Page</title>
   </head>
   <body>
@@ -16,7 +17,6 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li>
-            <label for="places">Choose a place:</label>
             <select id="places" name="places">
               <option value="cairo">Cairo</option>
               <option value="giza">Giza</option>
@@ -34,10 +34,10 @@
               <option value="the-lake">The Lake</option>
               <option value="alsharqia">Alsharqia</option>
               <option value="south-sinai">South Sinai</option>
-              <option value="red-sea">Red Sea</option>
+              <option value="red-sea"><a href="#">Red Sea</a></option>
             </select>
           </li>
-          <li><a href="#">About</a></li>
+          <li><a href="#aboutus">About</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
         <div class="change_mode">
@@ -79,9 +79,7 @@
 
     </section>
 
-
-
-    <div class="aboutus">
+    <div class="aboutus" id="aboutus">
 
       <div class="section_one">
         <h2 class="aboutustext">ABOUT US</h2>
@@ -101,14 +99,60 @@
     </div>
     
     <div class="alex_town">
-      <div class="text">
+       <div class="text">
         The Citadel of Qaitbay is one of the most important defensive fortresses on the Mediterranean coast. It was built by the Mamluk Sultan Al-Ashraf Abu Al-Nasr Qaitbay in the period between (882-884 AH / 1477-1479 AD) on the ruins of the ancient Lighthouse of Alexandria at the eastern end of Pharos Island (present-day Anfoushi) to fortify the city of Alexandria and protect it from naval invasions.
       </div>
       <div class="img"></div>
+      <div class="overlay"></div>
+     
     </div>
 
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الصورة 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="الصورة 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="الصورة 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="pexels-latuna-4102994.jpg" class="d-block w-100" alt="الصورة 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>المشهد الأول</h5>
+                <p>صورة جميلة من مصر.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="pexels-ukiyoo-1912620432-30813202.jpg" class="d-block w-100" alt="الصورة 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>المشهد الثاني</h5>
+                <p>مكان رائع للسياحة.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="pexels-axp-photography-500641970-16535876.jpg" class="d-block w-100" alt="الصورة 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>المشهد الثالث</h5>
+                <p>استمتع بجمال مصر.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">السابق</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">التالي</span>
+    </button>
+</div>
+
     <div class="poupler_tour">
-      <div class="one_aswan">
+    <div class="one_text">
+        <p>Popular Tour :</p>
+    </div>
+
+    <div class="two_content">
+            <div class="one_aswan">
         <div class="img"></div>
         <div class="text"> Aswan <i class="fa-regular fa-heart red" ></i></div>
       </div>
@@ -129,8 +173,17 @@
         <div class="text"> sourthSenia <i class="fa-regular fa-heart red"></i></div>
       </div>
     </div>
+    </div>
 
+      <div class="new_museum">
+        <h1 class="text">
+          The Grand Egyptian Museum is one of the largest museums in the world, and it is the largest museum in Egypt. It is located in the city of Giza, near the pyramids of Giza, and it is considered one of the most important tourist attractions in Egypt. 
+        </h1>
+       <video src="the musuem.mp4 "controls></video>
+    </div>
 
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
