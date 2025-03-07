@@ -65,3 +65,22 @@ document.querySelectorAll(".fa-heart").forEach((heart) => {
         }
       });
     });
+
+let cairo = document.getElementById("cairo");
+let giza = document.getElementById("giza");
+let Fayoum = document.getElementById("Fayoum");
+let BeniSuef = document.getElementById("Beni_Suef");
+let Minya = document.getElementById("Minya");
+let Assiut = document.getElementById("Assiut");
+let Sohag = document.getElementById("Sohag");
+let Qena = document.getElementById("Qena");
+let Luxor = document.getElementById("Luxor");
+let Aswan = document.getElementById("Aswan");
+let RedSea = document.getElementById("Red_Sea");
+let NewValley = document.getElementById("New_Valley");
+let Matrouh = document.getElementById("Matrouh");
+let Alexandria = document.getElementById("Alexandria");
+let TheLake = document.getElementById("The_Lake");
+let Alsharqia = document.getElementById("Alsharqia");
+let South_Sinaia = document.getElementById("South_Sinaia");
+let redsea= document.getElementById("red-sea");
