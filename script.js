@@ -84,3 +84,8 @@ let TheLake = document.getElementById("The_Lake");
 let Alsharqia = document.getElementById("Alsharqia");
 let South_Sinaia = document.getElementById("South_Sinaia");
 let redsea= document.getElementById("red-sea");
+
+
+cairo.addEventListener("click", function () {
+  console.log("cairo");
+});
