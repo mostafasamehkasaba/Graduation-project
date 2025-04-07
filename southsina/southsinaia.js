@@ -16,7 +16,7 @@ moon.onclick = function () {
   sun.style.display = "flex";
 };
 
-let home = document.getElementById("home");
-home.addEventListener("click", function () {
-  window.location.href = "../Home.html";;
+let btnSalahEldeen = document.getElementById("btnSalahEldeen");
+btnSalahEldeen.addEventListener("click", function () { 
+  window.open("../southsina/salaheldeen/index.html")
 });

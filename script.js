@@ -87,5 +87,5 @@ let redsea= document.getElementById("red-sea");
 
 
 cairo.addEventListener("click", function () {
-  console.log("cairo");
+  window.location.href = "cairo.html";
 });

@@ -15,8 +15,19 @@ moon.onclick = function () {
   moon.style.display = "none";
   sun.style.display = "flex";
 };
+moon.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});
 
-let home = document.getElementById("home");
-home.addEventListener("click", function () {
-  window.location.href = "../Home.html";;
+let btnone = document.getElementById("btnOne");
+let btntwo = document.getElementById("btnTwo");
+let btnthree = document.getElementById("btnThree");
+btnone.addEventListener("click", function () {
+  window.location.href = "../red-sea/placeOne/index.html";
+});
+btntwo.addEventListener("click", function () {
+  window.location.href = "../red-sea/placeTwo/index.html";
+});
+btnthree.addEventListener("click", function () {
+  window.location.href = "../red-sea/placeThree/index.html";
 });

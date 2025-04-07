@@ -12,43 +12,50 @@
     <title>Home Page</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#" id="home">Home</a></li>
-          <li>
-            <select id="places" name="places">
-             <a href="#"> <option value="cairo" id="cairo">Cairo</option></a>
-              <option value="giza" id="giza">Giza</option>
-              <option value="fayoum" id="Fayoum">Fayoum</option>
-              <option value="beni-suef"id="Beni_Suef" >Beni Suef</option>
-              <option value="minya" id="Minya">Minya</option>
-              <option value="assiut" id="Assiut">Assiut</option>
-              <option value="sohag" id="sohag">Sohag</option>
-              <option value="qena" id="Qena">Qena</option>
-              <option value="luxor" id="Luxor">Luxor</option>
-              <option value="aswan" id="Aswan">Aswan</option>
-              <option value="new-valley" id="New_Valley">New Valley</option>
-              <option value="matrouh" id="Matrouh">Matrouh</option>
-              <option value="alexandria" id="Alexandria">Alexandria</option>
-              <option value="the-lake" id="The_Lake">The Lake</option>
-              <option value="alsharqia" id="Alsharqia">Alsharqia</option>
-              <option value="south-sinaia" id="South_Sinaia">South Sinaia</option>
-              <option value="red-sea" id="red-sea"><a href="#">Red Sea</a></option>
-            </select>
-          </li>
-          <li><a href="#aboutus">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="change_mode">
+ <header>
+  <div class="background"></div>
+  <div class="content">
+    <nav>
+      <ul class="navbar">
+        <li><a href="Home.html">Home</a></li>
+        <li class="dropdown" >
+          <a href="#" >Places ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="cairo/cairo.html">Cairo</a></li>
+            <li><a href="Giza/giza.html">Giza</a></li>
+            <li><a href="Fayoum/fayoum.html">Fayoum</a></li>
+            <li><a href="BeniaSuef/BeniaSuef.html">Beni Suef</a></li>
+            <li><a href="minya/minya.html">Minya</a></li>
+            <li><a href="Assiut/assiut.html">Assiut</a></li>
+            <li><a href="sohage/sohage.html">Sohag</a></li>
+            <li><a href="Qena/qena.html">Qena</a></li>
+            <li><a href="Luxor/luxor.html">Luxor</a></li>
+            <li><a href="Aswan/aswan.html">Aswan</a></li>
+            <li><a href="NewVally/newvally.html">New Valley</a></li>
+            <li><a href="Matrouh/matrouh.html">Matrouh</a></li>
+            <li><a href="Alexandria/alex.html">Alexandria</a></li>
+            <li><a href="TheLake/lake.html">The Lake</a></li>
+            <li><a href="Aelshatqia/alsharqia.html">Alsharqia</a></li>
+            <li><a href="southsina/sourthsinaia.html">South Sinaia</a></li>
+            <li><a href="red-sea/red-sea.html">Red Sea</a></li>
+          </ul>
+        </li>
+        <li><a href="#footer">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mode buttons -->
+  <div class="change_mode">
           <i class="fa-solid fa-moon dark" id="dark" class="dark"></i>
           <i class="fa-solid fa-sun light" id="light" class="light"></i>
         </div>
-      </nav>
-     <div class="background"></div>
-  <div class="content">
-    <h1 class="egypt_text">Welcome to Egypt</h1>
-    </header>
+  </div>
+
+  <!-- Title -->
+  <!-- <div class="egypt_text">Explore Egypt</div> -->
+</header>
+
 
     <section class="threePlaces">
 
@@ -107,7 +114,7 @@
      
     </div>
 
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" class="container">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الصورة 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="الصورة 2"></button>
@@ -115,9 +122,9 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="assites/imgs/Aswan.jpg" class="d-block w-95 m-auto" alt="الصورة 1">
+            <img src="assites/imgs/Aswan.jpg" class="d-block  m-auto" alt="الصورة 1">
             <div class="carousel-caption d-none d-md-block">
-                <h5>المشهد الأول</h5>
+                <h5>أسوان </h5>
                 <p>صورة جميلة من مصر.</p>
             </div>
         </div>
@@ -183,45 +190,8 @@
        <video src="the musuem.mp4 "controls></video>
     </div>
 
-        <!-- <footer>
-        <div class="footer-col">
-            <h4>products</h4>
-            <ul>
-                <li><a href="#">teams</a></li>
-                <li><a href="#">advertising</a></li>
-                <li><a href="#">talent</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>network</h4>
-            <ul>
-                <li><a href="#">technology</a></li>
-                <li><a href="#">science</a></li>
-                <li><a href="#">business</a></li>
-                <li><a href="#">professional</a></li>
-                <li><a href="#">API</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">legal</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer> -->
     
-    <footer class="site-footer">
+    <footer class="site-footer" id="footer">
   <div class="footer-container">
     <div class="footer-section about">
       <h3>عن الموقع</h3>

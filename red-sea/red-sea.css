@@ -1,76 +1,126 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
 body {
-  height: 5000px;
-  scroll-behavior: smooth;
- 
+    background-color: #E3F2FD; /* سماوي فاتح */
+    color: #01579B; /* أزرق بحري داكن للنصوص */
 }
 
+/* وضع الليل */
+.dark-mode body {
+    background-color: #0D47A1; /* أزرق داكن */
+    color: #B3E5FC; /* أزرق فاتح للنصوص */
+}
+/* ====== General Header Styling ====== */
 header {
-    
+  width: 100%;
+  margin: auto;
   position: relative;
   margin-top: 5px;
-  width: 100%;
-  height: 100vh;
+  height: 500px;
   overflow: hidden;
-}
-header .content {
-    width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    height: auto;
-    z-index: 3;
-    position: relative;
+  border-radius: 10px;
 }
 
-nav {
-    /* background-color: #ccc; */
+header .background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  height: auto;
-  z-index: 3;
-  position: relative;
+  height: 100%; 
+  background-image: url(imges/header.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: 1;
+  border-radius: 0 10px  10px 10px;
 }
 
-ul {
-  width: 90%;
+/* ====== Navigation Bar ====== */
+header .content {
+  width: 80%;
+  height: 10%;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  align-items: center;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 2;
+  height: auto;
+  width: 100%;
+}
+
+
+/* Navbar Container */
+ul.navbar {
+  display: flex;
   align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-ul li {
-  font-size: 18px;
+/* Navbar Items */
+ul.navbar li {
+  position: relative;
   margin: 0 15px;
+  margin-left: 10px;
 }
 
-ul li a {
+/* Navbar Links */
+ul.navbar a {
   text-decoration: none;
-  color: #000;
-  transition: color 0.3s;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
-ul li a:hover {
+/* Hover Effect */
+ul.navbar a:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: #f0a500;
 }
 
-ul li select {
+/* ====== Dropdown Menu ====== */
+ul.dropdown-menu {
+    height: 400px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 8px;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+ul.dropdown-menu li {
+  margin: 0;
+}
+
+ul.dropdown-menu a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
   font-size: 16px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  transition: background 0.3s, color 0.3s;
+}
+
+ul.dropdown-menu a:hover {
+  background: #f0a500;
+  color: black;
+}
+
+/* Show dropdown on hover */
+li.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 .change_mode {
@@ -78,7 +128,6 @@ ul li select {
   display: flex;
   align-items: center;
   gap: 10px;
-  justify-content: center;
 }
 
 .change_mode .dark {
@@ -108,11 +157,145 @@ ul li select {
 }
 
 .dark {
-  color: black;
-  background-color: #f0a500;
+  color: #CDAF7D  ;
+  background-color: #1C1C1C;
 }
 
 .light {
+  color: #5C4033 ;
+  background-color: #E8D5B7 ;
+}
+
+/* ====== Main Text in Hero Section ====== */
+.egypt_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  background-color: #000;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  header .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  ul.navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .change_mode {
+    margin-top: 10px;
+  }
+
+  ul.dropdown-menu {
+    position: static;
+    width: 100%;
+  }
+
+  li.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 50px;
+  background-color: #ccc;
+}
+.content h1{
+  text-align: center;
+  font-family: sans-serif;
+  padding-right: 20px;
+ 
+}
+.info{
+  width: 100%;
+  height: 600px;
+  margin:  10px auto;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+
+.info .section_one{
+  width: 70%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info .section_one .place_one {
+    width: 250px;
+    height: 200px;
+  
+}
+.info .section_one .place_one .content{
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+.info .section_one .place_one .content .img{
+  width: 100%;
+  height: 50%;
+  background-image: url(imges/دير-الانبا-بولا-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.info .section_one .place_one .content .text{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.info .section_one .place_two{
+  width: 200px;
+  height: 400px;
+  background-color: #eee;
+}
+.info .section_one .place_three{
+  width: 200px;
+  height: 400px;
+  background-color: #eee;
+}
+.info .section_two{
+  width: 30%;
+  height: 100%;
+  background-image: url(imges/Map.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.card-title{
+  text-align: end;
+  padding-right: 10px;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+.card-text{
+  text-align: end;
+  padding-right: 10px;
+  font-family: sans-serif;
+  font-size:20px;
 }
