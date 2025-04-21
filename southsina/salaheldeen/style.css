@@ -56,3 +56,62 @@ body{
     border-radius: 20px;
     
 }
+
+ .content2 {
+    width: 80%;
+    height: 300px;
+    margin: 30px auto;
+    background-color: #f8f8f8; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2 .text2{
+    width: 50%;
+    height: 100%,;
+    background-color: #ccc;
+    direction: rtl;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: sans-serif;
+}
+.content2 .img{
+    width: 40%;
+    height: 100%;
+    background-image: url(../salaheldeen/images/فرعون-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+}
+.Working_house{
+    width: 80%;
+    padding: 20px;
+    height: 200px;
+    background-color: #f8f8f8;
+    margin: 20px auto;
+    font-size: 20px;
+}
+.Working_house .one{
+    width: 100%;
+    height: 70px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.Working_house .one h4{
+    font-size: 30px;
+    color:rgb(239, 239, 74) ;
+}
+.Working_house .two{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.map{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 20px;
+}

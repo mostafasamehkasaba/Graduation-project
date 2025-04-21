@@ -20,3 +20,8 @@ let btnSalahEldeen = document.getElementById("btnSalahEldeen");
 btnSalahEldeen.addEventListener("click", function () { 
   window.open("../southsina/salaheldeen/index.html")
 });
+
+let Deersantctereen  = document.getElementById("btnDeersantctereen");
+Deersantctereen.addEventListener("click", function () { 
+  window.open("../southsina/DeerSantctereen/index.html")
+});
