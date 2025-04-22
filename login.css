@@ -9,7 +9,7 @@ body {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("assites/imgs/01.avif") no-repeat center center fixed;
+    url("assets/imgs/01.avif") no-repeat center center fixed;
   background-size: cover;
 }
 
